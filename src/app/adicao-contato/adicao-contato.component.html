@@ -1,0 +1,60 @@
+<div class="geral--container">
+  <form #f1="ngForm">
+    <div class="input--um">
+      <label for="nome"> Nome: </label>
+      <input
+        nome="ngModel"
+        [(ngModel)]="pessoa.nome"
+        name="nome"
+        type="text"
+        minlength="2"
+        maxlength="40"
+        required
+      />
+    </div>
+
+    <div class="input--dois">
+      <label for="nome"> Telefone: </label>
+      <input
+        telefone="ngModel"
+        [(ngModel)]="pessoa.telefone"
+        name="telefone"
+        type="phone"
+        minlength="2"
+        maxlength="14"
+        required
+      />
+    </div>
+
+    <div class="input--tres">
+      <label for="email"> E-mail: </label>
+      <input
+        email="ngModel"
+        [(ngModel)]="pessoa.email"
+        name="email"
+        type="email"
+        minlength="2"
+        max="100"
+        required
+        email
+      />
+    </div>
+
+    <input
+      id="button--cadastro"
+      type="button"
+      value="Cadastrar"
+      (click)="pushList(f1.value)"
+      [disabled]="f1.invalid"
+    />
+  </form>
+  <div class="resultado">
+    <mat-card *ngFor="let p of contatos" class="card--contatos">
+      <mat-card-title>{{ p.nome }}</mat-card-title>
+      <mat-card-subtitle>{{ p.email }}</mat-card-subtitle>
+      <mat-card-content>
+        <p>{{ p.telefone }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

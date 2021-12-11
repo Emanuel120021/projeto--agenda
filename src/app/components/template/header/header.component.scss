@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header span {
+  margin-left: 30px;
+}
+.header span i {
+  margin-right: 10px;
+}
+
+.header .logo {
+  max-height: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,61 @@
+.geral--container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.geral--container form {
+  margin: 20px 20px;
+}
+.input--um input,
+.input--dois input,
+.input--tres input {
+  height: 28px;
+  border-radius: 4px 4px 0px 0px;
+  border-collapse: separate;
+  background-color: #e5e5e5;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
+
+.input--um,
+.input--dois,
+.input--tres {
+  width: 250px;
+  margin: 12px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#button--cadastro {
+  margin-top: 30px;
+  height: 40px;
+  width: 100%;
+  background-color: #212121;
+  border-radius: 10px;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+.resultado {
+  margin-top: 20px;
+  height: 520px;
+  width: 300px;
+  overflow: auto;
+}
+
+.card--contatos {
+  margin-bottom: 20px;
+  background-color: #1b00ff;
+  box-shadow: inset 1px black;
+}
+
+.ng-valid[required],
+.ng-valid.required {
+  border-bottom: 5px solid #42a948; /* green */
+}
+
+.ng-invalid:not(form) {
+  border-bottom: 5px solid #a94442; /* red */
+}
