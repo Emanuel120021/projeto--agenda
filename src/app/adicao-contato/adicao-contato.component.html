@@ -39,6 +39,18 @@
         email
       />
     </div>
+    <div class="input--quatro">
+      <label for="email"> Aniversário </label>
+      <input
+        email="ngModel"
+        [(ngModel)]="pessoa.aniversario"
+        name="aniversario"
+        type="date"
+        minlength="2"
+        max="2"
+        required
+      />
+    </div>
 
     <input
       id="button--cadastro"
@@ -54,6 +66,9 @@
       <mat-card-subtitle>{{ p.email }}</mat-card-subtitle>
       <mat-card-content>
         <p>{{ p.telefone }}</p>
+        <p>
+          {{ p.aniversario }}
+        </p>
       </mat-card-content>
     </mat-card>
   </div>

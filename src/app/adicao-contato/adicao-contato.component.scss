@@ -8,7 +8,8 @@
 }
 .input--um input,
 .input--dois input,
-.input--tres input {
+.input--tres input,
+.input--quatro input {
   height: 28px;
   border-radius: 4px 4px 0px 0px;
   border-collapse: separate;
@@ -21,7 +22,8 @@
 
 .input--um,
 .input--dois,
-.input--tres {
+.input--tres,
+.input--quatro {
   width: 250px;
   margin: 12px auto;
   display: flex;
